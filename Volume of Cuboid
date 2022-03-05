@@ -1,0 +1,5 @@
+w = 4
+h = 7
+l = 5
+cuboid = (w * h * l)
+print(cuboid)
