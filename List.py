@@ -1,7 +1,7 @@
 list = [32,54,12,54,65]
 print(list)
 
-# finding index number
+# fetching the index number
 print(list.index(54))
 
 # append the number
