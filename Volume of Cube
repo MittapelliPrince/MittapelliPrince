@@ -1,0 +1,4 @@
+a = 4
+
+cube = (a ** 3)
+print(cube)
