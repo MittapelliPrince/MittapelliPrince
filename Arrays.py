@@ -1,18 +1,30 @@
-from array import*
-
-arr = array('i',[87,34,76,90])
+from array import *
+arr = array('i', [34, 54, 12, 76])
 print(arr)
 
-print(arr.buffer_info())
+for i in arr:
+    print(i)
 
-arr.append(45)
-print(arr)
+# Creating array using input
+newarr = array('i', [])
+n = int(input('Enter the length of array: '))
 
-print(arr.index(87))
+for i in range(n):
+    x = int(input('Enter the values: '))
+    newarr.append(x)
 
-newarr = array(arr.typecode, (x for x in arr))
 print(newarr)
 
-for i in range(len(arr)):
-    print(arr[i])
-    
+a = int(input('Enter for search value: '))
+
+y = 0
+for j in newarr:
+    if j == a:
+        print(y)
+        break
+    y += 1
+
+
+newarr.extend([64, 28, 54])
+print(newarr)
+print(newarr.index(a))
