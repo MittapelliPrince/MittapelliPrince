@@ -19,6 +19,7 @@ class LcdWindow(QDialog):
 
         self.lcd = QtWidgets.QLCDNumber()
         self.lcd.setStyleSheet('background-color : rgb(31, 170, 28);')
+        self.lcd.setSegmentStyle(QtWidgets.QLCDNumber.Flat)
         self.lcd.setDigitCount(8)
         vbox.addWidget(self.lcd)
 
